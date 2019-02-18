@@ -926,6 +926,10 @@ module.exports = Element.extend({
 				context.textBaseline = 'middle';
 				context.textAlign = itemToDraw.textAlign;
 
+				if (typeof optionTicks.fontColor === 'function') {
+					context.fillStyle = optionTicks.fontColor(itemToDraw);
+				}
+
 				var label = itemToDraw.label;
 				var y = itemToDraw.textOffset;
 				if (helpers.isArray(label)) {
