@@ -882,7 +882,8 @@ module.exports = Element.extend({
 				label: label,
 				major: tick.major,
 				textOffset: textOffset,
-				textAlign: textAlign
+				textAlign: textAlign,
+				index: index
 			});
 		});
 

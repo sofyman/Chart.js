@@ -10967,7 +10967,8 @@ var core_scale = core_element.extend({
 				label: label,
 				major: tick.major,
 				textOffset: textOffset,
-				textAlign: textAlign
+				textAlign: textAlign,
+				index: index
 			});
 		});
 
